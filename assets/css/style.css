@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+.container{
+    background-image: linear-gradient(to bottom, #5a6894, #53608c, #4c5883, #45507b, #3e4873);
+    color: white;
+    margin: 10rem auto;
+    border-radius: 10px;
+    width: 30vw;
+    font-weight: 300;
+    padding: 3%;
+    font-size: 1.5rem;
+    box-shadow: 1px 1px 13px 1px rgba(8,17,59,0.63);
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+#aktivität{
+    width: 30%;
+    border-radius: 5px;
+}
+
+label{
+    line-height: 3rem;
+    margin: 2% 0 10rem 0;
+}
+
+input{
+    padding:1.3% 0;
+    border-radius: 5px;
+    border: none;
+}
+
+option{
+    border-radius: 5px;
+}
+
+section form input:last-of-type{
+    padding: 1% 3%;
+    margin: 5% 0;
+}
+
+.ergebnis{
+    background-image: linear-gradient(to bottom, #5a6894, #53608c, #4c5883, #45507b, #3e4873);
+    ;
+    font-weight: 300;
+    padding: 3%;
+    font-size: 1.5rem;
+    box-shadow: 1px 1px 13px 1px rgba(8,17,59,0.63);
+    margin: 2rem auto;
+    border-radius: 10px;
+}
+
+.info-txt{
+    color: black;
+    font-size: 1rem;
+}

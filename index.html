@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lev3_3_projekt_js-vertiefung_kalorien-rechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <section class="container">
+        <h1>Kalorien Rechner</h1>
+        <form action="#" onsubmit="return false">
+            <label for="">Körpergröße in cm</label><br>
+            <input type="number" name="" id="inputGröße"><br>
+            <label for="">Alter</label><br>
+            <input type="number" name="" id="inputAlter"><br>
+            <label for="">Gewicht in kg</label><br>
+            <input type="number" name="" id="inputGewicht"><br>
+
+            <label for="">Körperbau</label><br>
+            <input type="radio" name="Körperbau" id="weiblich">
+            <label for="">weiblich</label><br>
+            <input type="radio" name="Körperbau" id="männlich">
+            <label for="">männlich</label><br>
+
+            <label for="">Arbeits-und Freizeitaktivität</label><br>
+            <select id="aktivität">
+                <option value="0.95">Schlafen</option>
+                <option value="1.2">Nur Sitzen oder Liegen</option>
+                <option value="1.5">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der Freizeit, z.B. Büroarbeit</option>
+                <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B. Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+                <option value="1.9">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner, Handwerker, Mechaniker, Hausfrauen</option>
+                <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
+            </select><br>
+
+            <input type="submit" value="Submit" onclick="rechner()">
+        </form>
+
+        <section class="ergebnis">
+            <p>Grundumsatz</p>
+            <p id="grundumsatzKcal">kCal</p>
+            <p id="grundumsatzKJ">kJ</p>
+
+            <p>Gesamtumsatz</p>
+            <p id="gesamtumsatzKcal">kCal</p>
+            <p id="gesamtumsatzKJ">kJ</p>
+
+        </section>
+
+        <p class="info-txt">Das Ergebnis des Rechners sollten Sie als Orientierungswert ansehen, da es verschiedene Fehlermöglichkeiten gibt wie abweichender Grundumsatz, falsche Zeiteinschätzung etc.</p>
+        
+
+    </section>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>
