@@ -3,6 +3,7 @@ const alter = document.getElementById("inputAlter");
 const gewicht = document.getElementById("inputGewicht");
 const frau = document.getElementById("weiblich");
 const mann = document.getElementById("männlich");
+const aktivität = document.getElementById("aktivität")
 const grundumsatzKcal = document.getElementById("grundumsatzKcal");
 const grundumsatzKJ = document.getElementById("grundumsatzKJ");
 const gesamtumsatzKcal = document.getElementById("gesamtumsatzKcal");
@@ -14,16 +15,16 @@ const rechner = () => {
     const grundMann = 664.7 + (13.7 * gewicht.value) + (5 * größe.value) - (6.8 * alter.value)
 
     if (frau.checked){
-        grundumsatzKcal.innerHTML = grundFrau.toFixed(1).concat("kcal");
-        grundumsatzKJ.innerHTML = (grundFrau * 4.1868).toFixed(1).concat("kJ")
-        gesamtumsatzKcal.innerHTML= (grundFrau * (document.getElementById("aktivität").value)).toFixed(1).concat("kcal");
-        gesamtumsatzKJ.innerHTML = ((grundFrau * (document.getElementById("aktivität").value)) * 4.1868).toFixed(1).concat("kJ")
+        grundumsatzKcal.innerHTML = grundFrau.toFixed(0).concat("kcal");
+        grundumsatzKJ.innerHTML = (grundFrau * 4.1868).toFixed(0).concat("kJ")
+        gesamtumsatzKcal.innerHTML= (grundFrau * aktivität.value).toFixed(0).concat("kcal");
+        gesamtumsatzKJ.innerHTML = ((grundFrau * aktivität.value) * 4.1868).toFixed(0).concat("kJ")
 
     } else{
-        grundumsatzKcal.innerHTML = grundMann.toFixed(1).concat("kcal");
-        grundumsatzKJ.innerHTML = (grundMann * 4.1868).toFixed(1).concat("kJ")
-        gesamtumsatzKcal.innerHTML= (grundMann * (document.getElementById("aktivität").value)).toFixed(1).concat("kcal");
-        grundumsatzKJ.innerHTML =  ((grundMann * (document.getElementById("aktivität").value)) * 4.1868).toFixed(1).concat("kJ")
+        grundumsatzKcal.innerHTML = grundMann.toFixed(0).concat("kcal");
+        grundumsatzKJ.innerHTML = (grundMann * 4.1868).toFixed(0).concat("kJ")
+        gesamtumsatzKcal.innerHTML= (grundMann * aktivität.value).toFixed(0).concat("kcal");
+        grundumsatzKJ.innerHTML =  ((grundMann * aktivität.value) * 4.1868).toFixed(0).concat("kJ")
     }
 }
 
